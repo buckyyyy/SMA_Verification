@@ -170,6 +170,7 @@ Agent Count
     	Other : {none};
     end Protocol
     Evolution:
+        a=0 if (Next_Block.Action=show_busy and Earthquake.Action=Earthquake and Landslides.Action=Abnormal and Intrusion.Action=Abnormal);
      	a=1 if (Next_Block.Action=show_free and Earthquake.Action=Earthquake and Landslides.Action=Abnormal and Intrusion.Action=Abnormal)or
      	       (Next_Block.Action=show_busy and Earthquake.Action=No_Earthquake and Landslides.Action=Abnormal and Intrusion.Action=Abnormal)or
     	       (Next_Block.Action=show_busy and Earthquake.Action=Earthquake and Landslides.Action=Normal and Intrusion.Action=Abnormal)or
